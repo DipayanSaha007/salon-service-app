@@ -18,7 +18,7 @@ function SignIn() {
 
         try {
             // Update this URL to match the backend endpoint for sign-in
-            const response = await fetch('${process.env.REACT_APP_API_URL}/signin', {
+            const response = await fetch('https://salon-service-backend-1-cpuirjpbn-dipayansaha007s-projects.vercel.app/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
