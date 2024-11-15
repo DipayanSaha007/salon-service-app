@@ -33,7 +33,7 @@ function EditProfile() {
         setLoading(true);  // Start loading state
 
         try {
-            const response = await fetch('https://salon-service-backend-1-cpuirjpbn-dipayansaha007s-projects.vercel.app/edit-profile', {
+            const response = await fetch('${process.env.REACT_APP_API_URL}/edit-profile', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, newUsername, newPassword })
