@@ -30,7 +30,7 @@ function SignUp() {
         }
 
         try {
-            const response = await fetch('https://salon-service-backend-1-cpuirjpbn-dipayansaha007s-projects.vercel.app/signup', {
+            const response = await fetch('${process.env.REACT_APP_API_URL}/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
